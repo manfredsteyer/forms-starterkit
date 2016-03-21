@@ -7,7 +7,7 @@ import {FlugEdit } from './flug-edit/flug-edit';
     @Component({
         selector: 'app',
         templateUrl: 'app/app.html',
-        directives: [ROUTER_DIRECTIVES] // router-outlet, routerLink
+        directives: [ROUTER_DIRECTIVES] 
     })
     @RouteConfig([
 

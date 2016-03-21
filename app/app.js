@@ -42,7 +42,7 @@ System.register(['angular2/core', 'angular2/router', './home/home', './flug-such
                     core_1.Component({
                         selector: 'app',
                         templateUrl: 'app/app.html',
-                        directives: [router_1.ROUTER_DIRECTIVES] // router-outlet, routerLink
+                        directives: [router_1.ROUTER_DIRECTIVES]
                     }),
                     router_1.RouteConfig([
                         { path: '/', component: home_1.Home, name: 'Home', useAsDefault: true },

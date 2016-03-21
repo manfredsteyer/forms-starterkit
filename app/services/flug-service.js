@@ -30,16 +30,6 @@ System.register(['angular2/core', 'angular2/http'], function(exports_1, context_
                     this.http = http;
                 }
                 FlugService.prototype.find = function (von, nach) {
-                    /*
-                    var url = this.baseUrl + "/api/flug"
-                        + "?abflugOrt="
-                        + encodeURIComponent(von)
-                        + "&zielOrt="
-                        + encodeURIComponent(nach);
-            
-                    // Promises
-                    return fetch(url).then(result => result.json());
-                    */
                     var url = this.baseUrl + "/api/flug";
                     var params = new http_1.URLSearchParams();
                     params.set('abflugOrt', von);

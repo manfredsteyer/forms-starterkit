@@ -1,8 +1,6 @@
 ﻿import {Injectable, Inject } from 'angular2/core';
 import { Http, URLSearchParams } from 'angular2/http';
 
-declare var fetch: any;
-
 @Injectable()
 export class FlugService {
 
@@ -13,16 +11,6 @@ export class FlugService {
 
     public find(von, nach) {
 
-        /*
-        var url = this.baseUrl + "/api/flug"
-            + "?abflugOrt="
-            + encodeURIComponent(von)
-            + "&zielOrt="
-            + encodeURIComponent(nach);
-
-        // Promises
-        return fetch(url).then(result => result.json());
-        */
         var url = this.baseUrl + "/api/flug";
 
         var params = new URLSearchParams();

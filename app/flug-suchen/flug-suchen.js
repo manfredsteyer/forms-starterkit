@@ -28,13 +28,6 @@ System.register(['angular2/core', '../services/flug-service', '../pipes/ort-pipe
             }],
         execute: function() {
             FlugSuchen = (function () {
-                /*
-                private flugService: FlugService;
-            
-                constructor(flugService: FlugService) {
-                    this.flugService = flugService;
-                }
-                */
                 function FlugSuchen(flugService) {
                     this.flugService = flugService;
                     this.von = "Graz";

@@ -8,11 +8,10 @@ import { ROUTER_DIRECTIVES} from 'angular2/router';
 declare var fetch: any;
  
 @Component({
-    selector: 'flug-suchen', // <flug-suchen></flug-suchen> <flug-suchen></flug-suchen>
+    selector: 'flug-suchen', 
     templateUrl: 'app/flug-suchen/flug-suchen.html',
     pipes: [OrtPipe],
     directives: [ROUTER_DIRECTIVES]
-    // providers: [provide(FlugService, { useClass: FlugService }]
 })
 export class FlugSuchen {
 
@@ -20,14 +19,6 @@ export class FlugSuchen {
     public nach: string = "Hamburg";
     public fluege: Array<IFlug> = new Array<IFlug>();
     public selectedFlug: IFlug;
-
-    /*
-    private flugService: FlugService;
-
-    constructor(flugService: FlugService) {
-        this.flugService = flugService;
-    }
-    */
 
     constructor(private flugService: FlugService) {
     }
